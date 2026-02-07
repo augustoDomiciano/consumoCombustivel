@@ -1,18 +1,12 @@
+using { cuid, managed } from '@sap/cds/common';
+
 @odata service Consumo {
-  entity Cnhs { 
-    key ID:Integer;
+  entity Cnhs : cuid, managed { 
     categoria:String
   }
-  entity kmPrimeiro {
-    key ID:Integer;
-    resultado:Integer;
+  entity ConsumoVeiculos : cuid, managed {
+    kmPrimeiro:Integer;
+    kmSegundo:Integer;
+    litros:Integer
   }
-    entity kmSegundo {
-    key ID:Integer;
-    resultado:Integer;
-  }
-    entity litros {
-    key ID:Integer;
-    resultado:Integer;
-  }
-} 
+}
