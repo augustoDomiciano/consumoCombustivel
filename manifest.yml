@@ -1,0 +1,7 @@
+---
+applications:
+  - name: myApp
+    path: gen/srv
+    buildpacks:
+      - nodejs_buildpack
+    memory: 256M
