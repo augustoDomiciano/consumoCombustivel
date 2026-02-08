@@ -1,0 +1,31 @@
+{
+  "format_version": 1,
+  "imports": [
+    {
+      "target_table": "CONSUMO_CONSUMOVEICULOS",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "Consumo.ConsumoVeiculos.csv",
+        "has_header": true,
+        "type_config": {
+          "delimiter": ","
+        }
+      },
+      "import_settings": {
+        "import_columns": [
+          "CNH",
+          "KMPRIMEIRO",
+          "KMSEGUNDO",
+          "LITROS"
+        ],
+        "include_filter": []
+      },
+      "column_mappings": {
+        "CNH": "CNH",
+        "KMPRIMEIRO": "kmPrimeiro",
+        "KMSEGUNDO": "kmSegundo",
+        "LITROS": "litros"
+      }
+    }
+  ]
+}

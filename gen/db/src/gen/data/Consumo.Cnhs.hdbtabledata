@@ -8,18 +8,16 @@
         "file_name": "Consumo.Cnhs.csv",
         "has_header": true,
         "type_config": {
-          "delimiter": ","
+          "delimiter": ";"
         }
       },
       "import_settings": {
         "import_columns": [
-          "ID",
           "CATEGORIA"
         ],
         "include_filter": []
       },
       "column_mappings": {
-        "ID": "ID",
         "CATEGORIA": "Categoria"
       }
     }

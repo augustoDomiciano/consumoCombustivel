@@ -1,5 +1,0 @@
-COLUMN TABLE Consumo_kmPrimeiro (
-  ID INTEGER NOT NULL,
-  resultado INTEGER,
-  PRIMARY KEY(ID)
-)

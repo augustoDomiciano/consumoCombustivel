@@ -1,0 +1,6 @@
+COLUMN TABLE ConsumoVeiculos (
+  CNH NVARCHAR(5000),
+  kmPrimeiro INTEGER,
+  kmSegundo INTEGER,
+  litros INTEGER
+)

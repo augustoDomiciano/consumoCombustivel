@@ -5,6 +5,7 @@ using { cuid, managed } from '@sap/cds/common';
     categoria:String
   }
   entity ConsumoVeiculos : cuid, managed {
+    CNH:String;
     kmPrimeiro:Integer;
     kmSegundo:Integer;
     litros:Integer

@@ -1,5 +1,0 @@
-COLUMN TABLE kmSegundo (
-  ID INTEGER NOT NULL,
-  categoria NVARCHAR(5000),
-  PRIMARY KEY(ID)
-)

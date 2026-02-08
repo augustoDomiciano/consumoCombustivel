@@ -1,9 +1,12 @@
-COLUMN TABLE Consumo_Cnhs (
+COLUMN TABLE Consumo_ConsumoVeiculos (
   ID NVARCHAR(36) NOT NULL,
   createdAt TIMESTAMP,
   createdBy NVARCHAR(255),
   modifiedAt TIMESTAMP,
   modifiedBy NVARCHAR(255),
-  categoria NVARCHAR(5000),
+  CNH NVARCHAR(5000),
+  kmPrimeiro INTEGER,
+  kmSegundo INTEGER,
+  litros INTEGER,
   PRIMARY KEY(ID)
 )
