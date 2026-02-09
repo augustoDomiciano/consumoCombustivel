@@ -10,4 +10,8 @@ using { cuid, managed } from '@sap/cds/common';
     kmSegundo:Integer;
     litros:Integer
   }
+
+  entity RemoverConsumo{
+    
+  }
 }
