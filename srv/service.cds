@@ -12,7 +12,7 @@ using { cuid, managed } from '@sap/cds/common';
   }
 }
 
-@odata 
+@odata
 @path: 'calc' service CalculoConsumo {
-  action CalculoConsumo(kmPrimeiro: Decimal(13,3), kmSegundo: Decimal(13,3), litros : Decimal(13,3)) returns Decimal(13,5);
+  action CalculoConsumo(kmPrimeiro: Integer, kmSegundo: Integer, litros : Integer) returns Integer;
 }

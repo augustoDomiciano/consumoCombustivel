@@ -17,7 +17,7 @@
   "cds": {
     "requires": {
       "auth": {
-        "kind": "dummy"
+        "kind": "mocked"
       },
       "db": "hana"
     }

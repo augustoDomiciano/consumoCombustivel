@@ -1,4 +1,4 @@
-COLUMN TABLE org_ard_ConsumoVeiculos (
+COLUMN TABLE ConsumoVeiculos (
   CNH NVARCHAR(5000),
   kmPrimeiro INTEGER,
   kmSegundo INTEGER,

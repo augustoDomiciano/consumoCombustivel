@@ -7,7 +7,8 @@ module.exports = cds.service.impl(function () {
       req.reject(400, 'Parâmetros numéricos são obrigatórios')
     }
     if (litros === 0) req.reject(400, 'Litros não pode ser zero')
-    return (kmSegundo - kmPrimeiro) / litros
+    const consumo = (kmSegundo - kmPrimeiro) / litros
+    return `O seu consumo foi de: ${consumo.toFixed(2)} KM/L`
   })
 })
 

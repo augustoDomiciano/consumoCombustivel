@@ -20,10 +20,10 @@
         <ActionImport Name="CalculoConsumo" Action="CalculoConsumo.CalculoConsumo"/>
       </EntityContainer>
       <Action Name="CalculoConsumo" IsBound="false">
-        <Parameter Name="kmPrimeiro" Type="Edm.Decimal" Precision="13" Scale="3"/>
-        <Parameter Name="kmSegundo" Type="Edm.Decimal" Precision="13" Scale="3"/>
-        <Parameter Name="litros" Type="Edm.Decimal" Precision="13" Scale="3"/>
-        <ReturnType Type="Edm.Decimal" Precision="13" Scale="5"/>
+        <Parameter Name="kmPrimeiro" Type="Edm.Int32"/>
+        <Parameter Name="kmSegundo" Type="Edm.Int32"/>
+        <Parameter Name="litros" Type="Edm.Int32"/>
+        <ReturnType Type="Edm.Int32"/>
       </Action>
     </Schema>
   </edmx:DataServices>

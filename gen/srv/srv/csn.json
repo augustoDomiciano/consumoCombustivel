@@ -1,7 +1,6 @@
 {
-  "namespace": "org.ard",
   "definitions": {
-    "org.ard.Cnhs": {
+    "Cnhs": {
       "kind": "entity",
       "elements": {
         "categoria": {
@@ -9,7 +8,7 @@
         }
       }
     },
-    "org.ard.ConsumoVeiculos": {
+    "ConsumoVeiculos": {
       "kind": "entity",
       "elements": {
         "CNH": {
@@ -186,25 +185,17 @@
       "kind": "action",
       "params": {
         "kmPrimeiro": {
-          "type": "cds.Decimal",
-          "precision": 13,
-          "scale": 3
+          "type": "cds.Integer"
         },
         "kmSegundo": {
-          "type": "cds.Decimal",
-          "precision": 13,
-          "scale": 3
+          "type": "cds.Integer"
         },
         "litros": {
-          "type": "cds.Decimal",
-          "precision": 13,
-          "scale": 3
+          "type": "cds.Integer"
         }
       },
       "returns": {
-        "type": "cds.Decimal",
-        "precision": 13,
-        "scale": 5
+        "type": "cds.Integer"
       }
     },
     "cds.outbox.Messages": {

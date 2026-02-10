@@ -1,5 +1,3 @@
-namespace org.ard;
-
 entity Cnhs {
     categoria:String
 }
