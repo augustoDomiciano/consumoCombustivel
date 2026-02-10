@@ -1,6 +1,7 @@
 {
+  "namespace": "org.ard",
   "definitions": {
-    "Cnhs": {
+    "org.ard.Cnhs": {
       "kind": "entity",
       "elements": {
         "categoria": {
@@ -8,7 +9,7 @@
         }
       }
     },
-    "ConsumoVeiculos": {
+    "org.ard.ConsumoVeiculos": {
       "kind": "entity",
       "elements": {
         "CNH": {
@@ -173,6 +174,37 @@
         "litros": {
           "type": "cds.Integer"
         }
+      }
+    },
+    "CalculoConsumo": {
+      "@source": "srv/service.cds",
+      "kind": "service",
+      "@odata": true,
+      "@path": "calc"
+    },
+    "CalculoConsumo.CalculoConsumo": {
+      "kind": "action",
+      "params": {
+        "kmPrimeiro": {
+          "type": "cds.Decimal",
+          "precision": 13,
+          "scale": 3
+        },
+        "kmSegundo": {
+          "type": "cds.Decimal",
+          "precision": 13,
+          "scale": 3
+        },
+        "litros": {
+          "type": "cds.Decimal",
+          "precision": 13,
+          "scale": 3
+        }
+      },
+      "returns": {
+        "type": "cds.Decimal",
+        "precision": 13,
+        "scale": 5
       }
     },
     "cds.outbox.Messages": {
