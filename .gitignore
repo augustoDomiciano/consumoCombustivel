@@ -1,3 +1,10 @@
 
 # added by cds
 .cdsrc-private.json
+mta*/
+/node_modules
+xs-security.json
+mta.yaml
+manifest.yaml
+gen/
+.gen
